@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dank.festivalapp"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="auto"
+    android:sharedUserId="com.dank.festivalapp"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/festival_app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.dank.festivalapp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dank.festivalapp.NewsActivity"
+            android:label="@string/title_activity_news"
+            android:parentActivityName="com.dank.festivalapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.festivalapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.dank.festivalapp.NewsDetailsActivity"
+            android:label="@string/title_activity_news_view"
+            android:parentActivityName="com.dank.festivalapp.NewsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.festivalapp.NewsActivity" />
+        </activity>
+        <activity
+            android:name="com.dank.festivalapp.BandActivity"
+            android:label="@string/title_activity_band"
+            android:parentActivityName="com.dank.festivalapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.festivalapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.dank.festivalapp.BandDetailsActivity"
+            android:label="@string/title_activity_bands_info"
+            android:parentActivityName="com.dank.festivalapp.BandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.festivalapp.BandActivity" />
+        </activity>
+        <activity
+            android:name="com.dank.festivalapp.RunningOrderActivity"
+            android:label="@string/title_activity_running_order"
+            android:parentActivityName="com.dank.festivalapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.festivalapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.dank.festivalapp.RunningOrderBandDetailsActivity"
+            android:label="@string/title_activity_bands_info"
+            android:parentActivityName="com.dank.festivalapp.RunningOrderActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dank.festivalapp.RunningOrderActivity" />
+        </activity>
+        <activity
+            android:name="com.dank.festivalapp.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.dank.festivalapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dank.festivalapp.MainActivity" />
+        </activity>
+
+        <service
+            android:name="TimerService"
+            android:label="@string/timer_service_name" >
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="10dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:paddingTop="10dip" 
+    android:orientation="vertical">
+
+     <RelativeLayout
+        android:id="@+id/relative5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/festival_ID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="10dp"
+            android:text="@string/festival_ID_name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/festival_ID_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/festival_ID"
+            android:paddingBottom="10dp"
+            android:text="@string/festival_ID_desc"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#98AFC7" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#ffffff" />
+    
+    
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <CheckBox
+            android:id="@+id/privateRunningOrderCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="false" />
+
+        <TextView
+            android:id="@+id/list_complex_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/privateRunningOrderCheckBox"
+            android:paddingTop="10dp"
+            android:text="@string/private_running_order_text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/list_complex_caption"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/list_complex_title"
+            android:paddingBottom="10dp"
+            android:text="@string/private_running_order_text_desc"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#98AFC7" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/relative4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/warn_time_news"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/warn_time_interval"
+            android:text="@string/warn_time_text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/warn_time_news_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/warn_time_news"
+            android:text="@string/warn_time_desc_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#98AFC7" />
+
+        <TextView
+            android:id="@+id/warn_time_interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/warn_time_news"
+            android:layout_alignBottom="@+id/warn_time_news"
+            android:layout_alignParentRight="true"
+            android:text="0 min"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+        <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/update_time_news"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/update_time_news_timeinterval"
+            android:text="@string/update_time_news_text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/update_time_news_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/update_time_news"
+            android:text="@string/update_time_news_desc_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#98AFC7" />
+
+        <TextView
+            android:id="@+id/update_time_news_timeinterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/update_time_news"
+            android:layout_alignBottom="@+id/update_time_news"
+            android:layout_alignParentRight="true"
+            android:text="00:00"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+    
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/relative3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/cleanup_all"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/action_cleanup"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/action_cleanup_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/cleanup_all"
+            android:layout_below="@+id/cleanup_all"
+            android:text="@string/action_cleanup_desc"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#98AFC7" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FestivalApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_manual_update">Manual Cache Update</string>
+    <string name="action_cleanup">Cleanup All</string>
+    <string name="action_cleanup_desc">Remove all cached content (news, band infos, etc.) and properties</string>
+    <string name="action_test">Test</string>
+    <string name="button_news">News</string>
+        <string name="button_running_order">Running Order</string>
+    <string name="button_lineup">Lineup</string>
+    <string name="button_map">Map</string>
+    <string name="button_settings">Settings</string>
+    <string name="title_activity_news">News Feed</string>    
+    <string name="title_activity_news_view">News</string>
+    <string name="title_activity_band">Lineup</string>
+    <string name="title_activity_bands_info">Band Info</string>
+    <string name="prev">Prev</string>
+    <string name="next">Next</string>
+    <string name="watch">Watch</string>
+    <string name="title_activity_running_order">Running Order</string>
+    <string name="title_activity_settings">Settings</string>
+	<string name="private_running_order_text">Private Running Order</string>
+	<string name="private_running_order_text_desc">Only bands which are tagged as "watch" are presented in the running order view.</string>
+	<string name="cleanup_question">Remove all data?</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="ok">Ok</string>
+	<string name="reminder">Reminder</string>
+	<string name="cleanup_success">All data removed</string>
+	<string name="update_time_news_text">Automatic Update Intervall</string>
+	<string name="update_time_news_desc_text">Time intervall to check for new updates</string>
+	<string name="no_news_available">Sorry, there are currently no news available. </string>
+	<string name="no_running_order_available">Sorry, there is currently no runnning order available.</string>
+	<string name="no_bands_available">Sorry, there are currently no bands available.</string>
+		
+	<string name="timer_service_name">FestivalApp Timer Service</string>
+	<string name="warn_time_text">Warning Time</string>
+	<string name="warn_time_desc_text">A timer to remember you that a gig of a band you like will start within the given time interval.</string>
+	
+	<string name="festival_ID_name">Your chosen Festival</string>
+	<string name="festival_ID_desc">The current festival</string>
+	
+	<style name="ButtonText">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">#ffffff</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_margin">3dp</item>
+    <item name="android:textSize">30dp</item>
+    <!-- <item name="android:textStyle">bold</item> -->
+    <item name="android:shadowColor">#000000</item>
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:shadowRadius">2</item>
+</style>
+	
+</resources>

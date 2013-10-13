@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".RunningOrderActivity" >
+
+    <TextView
+        android:id="@+id/bandName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageWatch"
+        android:layout_toRightOf="@+id/time"
+        android:paddingBottom="3dp"
+        android:paddingLeft="6dp"
+        android:paddingTop="3dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:text="BandView" />
+    
+    <ImageView
+        android:id="@+id/imageWatch"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/pentagram" />
+
+    <TextView
+        android:id="@+id/flavor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageWatch"
+        android:layout_toRightOf="@+id/time"
+        android:paddingBottom="3dp"
+        android:paddingLeft="6dp"
+        android:text="Flavor"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="3dp"
+        android:paddingRight="6dp"
+        android:paddingTop="3dp"
+        android:text="Time"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/stage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/flavor"
+        android:layout_alignBottom="@+id/flavor"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="3dp"
+        android:paddingRight="6dp"
+        android:paddingTop="3dp"
+        android:text="Stage"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#98AFC7" />
+
+</RelativeLayout>

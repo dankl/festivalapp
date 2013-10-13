@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:paddingTop="10dip"
+    tools:context=".NewsDetailsActivity" >
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="100"
+        android:scrollHorizontally="false"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subject"
+        android:paddingBottom="10dip"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#98AFC7" />
+
+    <Button
+        android:id="@+id/prevButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_black"
+        android:onClick="prevNews"
+        android:text="@string/prev"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/prevButton"
+        android:layout_alignBottom="@+id/prevButton"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_black"
+        android:onClick="nextNews"
+        android:text="@string/next"
+        android:textColor="#ffffff" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prevButton"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignRight="@+id/nextButton"
+        android:layout_below="@+id/date" >
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:text="TextView"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </ScrollView>
+
+</RelativeLayout>

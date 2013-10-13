@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BandDetailsActivity" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prevButton"
+        android:layout_toLeftOf="@+id/nextButton"
+        android:maxLines="100"
+        android:scrollHorizontally="false"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/flavor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_below="@+id/name"
+        android:maxLines="100"
+        android:paddingBottom="10dip"
+        android:scrollHorizontally="false"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#98AFC7" />
+
+    <Button
+        android:id="@+id/prevButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_black"
+        android:onClick="prevBand"
+        android:text="@string/prev"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/prevButton"
+        android:layout_alignBottom="@+id/prevButton"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_black"
+        android:onClick="nextBand"
+        android:text="@string/next"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/imageWatch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/nextButton"
+        android:layout_alignTop="@+id/name"
+        android:src="@drawable/pentagram_grey" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/prevButton"
+        android:layout_alignLeft="@+id/prevButton"
+        android:layout_alignRight="@+id/nextButton"
+        android:layout_below="@+id/flavor" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/festival_app" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="100"
+                android:scrollHorizontally="false"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/bandfoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/festival_app" />
+
+            <LinearLayout
+                android:id="@+id/external_links"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/bandLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_black"
+                    android:onClick="openBandPage"
+                    android:text="Bandpage"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/wikipediaLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_black"
+                    android:onClick="openWikipediaLink"
+                    android:text="Wikipedia"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/metalarchives"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_black"
+                    android:onClick="openMetalArchivesLink"
+                    android:text="Encyclopaedia Metallum"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

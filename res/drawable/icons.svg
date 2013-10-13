@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg3834"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="icons.svg">
+  <defs
+     id="defs3836">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-12.083085 : 662.47303 : 1"
+       inkscape:vp_y="0 : 738.05289 : 0"
+       inkscape:vp_z="567.83048 : 662.47303 : 1"
+       inkscape:persp3d-origin="277.8737 : 533.0232 : 1"
+       id="perspective3782" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.129793"
+     inkscape:cx="223.51962"
+     inkscape:cy="970.94434"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="991"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="false"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-global="false" />
+  <metadata
+     id="metadata3839">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       y="52.038197"
+       x="44.882557"
+       height="63.647602"
+       width="64.667641"
+       id="rect3855"
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/pantagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="matrix(0.66178831,0,0,0.84421636,84.704791,27.753419)"
+       d="m 34.363638,66.545456 a 45.545456,35.272728 0 1 1 -91.090912,0 45.545456,35.272728 0 1 1 91.090912,0 z"
+       sodipodi:ry="35.272728"
+       sodipodi:rx="45.545456"
+       sodipodi:cy="66.545456"
+       sodipodi:cx="-11.181818"
+       id="path3857"
+       style="fill:none;stroke:#ffffff;stroke-width:3.78332019;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/pantagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3859"
+       d="m 54.941161,64.113999 22.90909,48.909091 23.090909,-47.272731 -50.363639,31.63637 54.363639,-0.54546 z"
+       style="fill:none;stroke:#ffff77;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/pantagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="path3861"
+       d="m 60.408791,63.110849 17.06667,47.786661 16.896,-47.616001 -42.15467,31.232 49.749339,-0.0853 z"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/pantagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="52.179417"
+       x="117.68378"
+       height="63.647602"
+       width="64.667641"
+       id="rect3855-2"
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/pentagram_grey.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="matrix(0.66178831,0,0,0.84421636,157.50601,27.89464)"
+       d="m 34.363638,66.545456 a 45.545456,35.272728 0 1 1 -91.090912,0 45.545456,35.272728 0 1 1 91.090912,0 z"
+       sodipodi:ry="35.272728"
+       sodipodi:rx="45.545456"
+       sodipodi:cy="66.545456"
+       sodipodi:cx="-11.181818"
+       id="path3857-9"
+       style="fill:none;stroke:#4c4c4c;stroke-width:3.78332018999999997;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/pentagram_grey.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3859-7"
+       d="m 127.74238,64.25522 22.90909,48.90909 23.09091,-47.27273 -50.36364,31.63637 54.36364,-0.54546 z"
+       style="fill:none;stroke:#ffff77;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/pentagram_grey.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="path3861-2"
+       d="m 133.21001,63.25207 17.06667,47.78666 16.896,-47.616 -42.15467,31.232 49.74934,-0.0853 z"
+       style="fill:none;stroke:#4c4c4c;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/pentagram_grey.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="52.326324"
+       x="191.92911"
+       height="63.647602"
+       width="64.667641"
+       id="rect3855-2-4"
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/pentagram_grey.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:#000000;stroke:#ffffff;stroke-width:1.19999999999999996;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
+       id="rect3840"
+       width="12.163381"
+       height="28.246338"
+       x="195.00023"
+       y="66.837318"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/festival_app.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:#000000;stroke:#ffffff;stroke-width:1.19999999999999996;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
+       id="rect3840-4"
+       width="12.1536"
+       height="28.595953"
+       x="241.457"
+       y="66.842216"
+       inkscape:transform-center-x="50.824148"
+       inkscape:transform-center-y="-5.1064163"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/festival_app.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#000000;stroke:#fefefe;stroke-width:1.19999999999999996;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+       d="m 207.79043,69.1921 c 35.92806,0.1631 33.30557,0.1631 33.30557,0.1631 l -4.98273,-8.154991 -23.95203,-0.08156 z"
+       id="path3865"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/festival_app.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-opacity:1"
+       id="rect3929"
+       width="33.693344"
+       height="22.821627"
+       x="207.55103"
+       y="70.043854"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/festival_app.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#f9f9f9;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 230.2828,75.614481 0,0"
+       id="path3010"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/festival_app.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="matrix(0.22680581,0,0,0.2711425,226.88888,63.276589)"
+       d="m 34.363638,66.545456 a 45.545456,35.272728 0 1 1 -91.090912,0 45.545456,35.272728 0 1 1 91.090912,0 z"
+       sodipodi:ry="35.272728"
+       sodipodi:rx="45.545456"
+       sodipodi:cy="66.545456"
+       sodipodi:cx="-11.181818"
+       id="path3857-9-2"
+       style="fill:none;stroke:#868686;stroke-width:3.78332018999999997;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/festival_app.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3859-7-7"
+       d="m 216.68839,74.954749 7.85132,15.708457 7.91365,-15.182895 -17.26046,10.160863 18.63132,-0.175188 z"
+       style="fill:none;stroke:#ffff77;stroke-width:0.99531537;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/festival_app.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="path3861-2-0"
+       d="m 218.56224,74.632562 5.84903,15.347953 5.79054,-15.293143 -14.44712,10.030992 17.04993,-0.02736 z"
+       style="fill:none;stroke:#868686;stroke-width:0.66354363999999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/festival_app.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#aeaeae;fill-opacity:1;stroke:none"
+       d="m 237.24609,76.333273 10.24278,23.270872 -5.89512,0 z"
+       id="path3871-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/festival_app.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#aeaeae;fill-opacity:1;stroke:none"
+       d="m 233.96661,79.882305 5.1214,20.755105 -2.94758,0 z"
+       id="path3871-8-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/festival_app.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#aeaeae;fill-opacity:1;stroke:none"
+       d="m 214.85209,79.522909 -3.95334,20.934801 2.27531,0 z"
+       id="path3871-8-6-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/festival_app.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#aeaeae;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 212.85211,76.333272 -12.489,23.540419 7.18791,0 z"
+       id="path3871"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/dank/Coden/eclipse-workspace/FestivalApp/res/drawable/festival_app.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>
