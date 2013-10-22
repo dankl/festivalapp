@@ -1,4 +1,5 @@
-== A festival application for Android ==
+FestivalApp - A festival offline cache for Android
+======================
 
 Features
 
@@ -7,4 +8,4 @@ Features
   - a private running order, including a timer for the next prefered gig
   - additional informations for bands (e.g. bandpage, wikipedia, encyclopedia metallum)
 
-![Baphomet](https://github.com/dankl/festivalapp/blob/master/res/drawable/baphomet_pentagram.jpg)
+![Baphomet](https://raw.github.com/dankl/festivalapp/blob/master/res/drawable/baphomet_pentagram.jpg)
