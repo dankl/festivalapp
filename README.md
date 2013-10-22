@@ -31,8 +31,3 @@ Todo / Next:
 Screenshots:
 ------------
 ![Front](screenshots/Front.png)
-![BandScreenshot1](screenshots/Band1.png)
-![BandScreenshot2](screenshots/Band2.png)
-![Running Order](screenshots/RunningOrder1.png)
-![Settings1](screenshots/Settings1.png)
-![Settings2](screenshots/Settings2.png)
