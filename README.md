@@ -1,4 +1,4 @@
-A festival application for Android
+== A festival application for Android ==
 
 Features
 
@@ -7,3 +7,4 @@ Features
   - a private running order, including a timer for the next prefered gig
   - additional informations for bands (e.g. bandpage, wikipedia, encyclopedia metallum)
 
+![Baphomet](https://github.com/dankl/festivalapp/blob/master/res/drawable/baphomet_pentagram.jpg)
