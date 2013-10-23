@@ -16,7 +16,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.dank.festivalapp.lib.Band;
@@ -33,8 +35,8 @@ public class MainActivity extends Activity {
 
 	private final static String PROVIDER_PACKAGE_PREFIX = "com.dank.festivalapp.";
 	private final static String PROVIDER_SERVICE = ".ProviderService";
-	
-	
+
+
 	/**
 	 * returns the clean provider name for the given provider application
 	 * @param applicationName
@@ -66,13 +68,13 @@ public class MainActivity extends Activity {
 			for (String p : allProvider)
 				if (festivalID.equals( getProviderName(p) ))
 					return p;
-			
+
 		} catch (NameNotFoundException e) {
 			e.printStackTrace();
 		}
 		return null;
 	}
-	
+
 	/**
 	 * returns the festival logo as a drawable for the given application
 	 * @param applicationName
@@ -85,10 +87,10 @@ public class MainActivity extends Activity {
 
 		if (res == null)
 			throw new NameNotFoundException();
-		    
+
 		return res.getDrawable( res.getIdentifier( applicationName + ":drawable/festival_logo", null, null) );
 	}
-	
+
 	/**
 	 * returns the application name of the current data provider, 
 	 * if no one was defined, the first provider found will be taken
@@ -153,24 +155,24 @@ public class MainActivity extends Activity {
 			e.printStackTrace();
 		}
 	}
-	
+
 	@Override
 	protected void onResume() {
 		super.onResume();
-		
+
 		getCurrDataProvider();
 
 		long currTimeStamp = System.currentTimeMillis();
 
 		String festivalID = getSharedPreferences("FestivalApp", MODE_PRIVATE).
 				getString(MainActivity.FESTIVAL_ID, "none");
-		
+
 		drawLogo( festivalID );
-		 
+
 		drawInfoBox(festivalID, currTimeStamp);
-		
+
 	}
-	
+
 	/**
 	 * returns a formated String containing all running Bands, and the next cnt playing Bands
 	 * @param currTimeStamp
@@ -181,10 +183,10 @@ public class MainActivity extends Activity {
 	{
 		RunningOrderDataSource datasource = new RunningOrderDataSource(this);
 		datasource.open();
-		
+
 		List<Band> currBands = datasource.getCurrentRunningBands(new Date(currTimeStamp), festivalID);
 		List<Band> nextBands = datasource.getNextRunningBands(new Date(currTimeStamp), cnt, festivalID);
-		
+
 		String msg = "";
 		if (currBands.size() > 0)
 		{
@@ -202,7 +204,7 @@ public class MainActivity extends Activity {
 
 		return msg;
 	}
-	
+
 	/**
 	 * returns the latest news for the given festival as a formated string
 	 * @param festivalID
@@ -214,17 +216,35 @@ public class MainActivity extends Activity {
 		newsdatasource.open();
 		News news = newsdatasource.getLatestNews(festivalID);
 		newsdatasource.close();
-				
+
 		if (news != null)
 		{
 			TextView textViewSubject = (TextView) findViewById(R.id.subject);
 			textViewSubject.setText(news.getSubject());
-					
+
 			TextView textViewDate = (TextView) findViewById(R.id.date);
 			textViewDate.setText(  news.getDateAsFormatedString() );
+
+			final String newsId = news.getID().toString();
+			Log.w("drawLatestNews", newsId.toString());
+
+			RelativeLayout relLayout = (RelativeLayout) findViewById(R.id.relativeLayout2);
+			relLayout.setOnClickListener(
+					new OnClickListener() {
+						@Override
+						public void onClick(View v) {
+							Log.w("onClick", newsId.toString());
+
+							Intent intent = new Intent(getApplicationContext(), NewsDetailsActivity.class );
+							intent.putExtra(NewsActivity.EXTRA_MESSAGE, newsId);
+							startActivity(intent);
+						}
+
+					});
 		};
+
 	}
-	
+
 	/**
 	 * draw the info box
 	 * - show the latest news and some infos for the chosen festival
@@ -236,22 +256,22 @@ public class MainActivity extends Activity {
 		RunningOrderDataSource datasource = new RunningOrderDataSource(this);
 		datasource.open();
 		Date openDate = datasource.getTimeFirstAct(festivalID);
-		
+
 		String info = "";
-		
+
 		// set last news in front
 		drawLatestNews(festivalID);
-		
+
 		if (openDate != null)
 		{		
 			long diff = openDate.getTime() - currTimeStamp;
 			long days = diff / ( 24 * 60 * 60 * 1000);
-			
+
 			if (days > 0) 
 			{
 				// show days till festival
 				info += "\n " + days + " Day";
-				
+
 				if (days >= 1) info += "s \n";
 			} 
 			else
@@ -259,9 +279,9 @@ public class MainActivity extends Activity {
 				// start all festival days actions
 				// - short band, views
 				// - start timer service
-				
+
 				info += currBandMsg(currTimeStamp, festivalID, 2);
-		
+
 				// start timer service
 				Intent timerService = new Intent(this, TimerService.class);
 				timerService.putExtra(SettingsActivity.EXTRA_MESSAGE, 
@@ -271,13 +291,13 @@ public class MainActivity extends Activity {
 				startService(timerService);	
 			}			
 		}
-		
+
 		TextView textViewInfo = (TextView) findViewById(R.id.info);
 		textViewInfo.setText(info);
 	}
-	
-	
-	
+
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);		
@@ -292,13 +312,13 @@ public class MainActivity extends Activity {
 
 		String festivalID = getSharedPreferences("FestivalApp", MODE_PRIVATE).
 				getString(MainActivity.FESTIVAL_ID, "none");
-		
+
 		drawLogo( festivalID );
-		 
+
 		drawInfoBox(festivalID, currTimeStamp);
 	}
 
-	
+
 	/**
 	 * update all local cached data
 	 * check for the last update, when the last update to old start new update
@@ -317,14 +337,19 @@ public class MainActivity extends Activity {
 		{
 			Intent intent = new Intent( getCurrDataProvider() + PROVIDER_SERVICE );			
 			startService(intent);	
-						
+
 			SharedPreferences.Editor editor = sharedPreferences.edit();
 			editor.putLong(LAST_UPDATE, currTimeStamp);
 			editor.commit();
 		}
+		
+		String festivalID = getSharedPreferences("FestivalApp", MODE_PRIVATE).
+				getString(MainActivity.FESTIVAL_ID, "none");
+		drawLatestNews(festivalID);
+		
 	}
-	
-	
+
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -340,16 +365,17 @@ public class MainActivity extends Activity {
 
 			List<String> providerList = new ArrayList<String>(); // list contains the clear names for the provider			
 			List<String> allProvider = null;
-			
+
 			try {
 				allProvider = getAllDataProvider();
 				for (String p : allProvider )
 					providerList.add( getProviderName( p ) );
-				
 			} catch (NameNotFoundException e) {
 				e.printStackTrace();
 			}
 			
+			 java.util.Collections.sort(providerList);
+
 			intent.putExtra(SettingsActivity.EXTRA_MESSAGE, 
 					providerList.toArray(new String[providerList.size()]) );
 

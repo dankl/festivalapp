@@ -34,6 +34,8 @@
 	<string name="no_news_available">Sorry, there are currently no news available. </string>
 	<string name="no_running_order_available">Sorry, there is currently no runnning order available.</string>
 	<string name="no_bands_available">Sorry, there are currently no bands available.</string>
+	<string name="main_news_subject">No news available</string>
+	<string name="main_news_date"></string>
 		
 	<string name="timer_service_name">FestivalApp Timer Service</string>
 	<string name="warn_time_text">Warning Time</string>

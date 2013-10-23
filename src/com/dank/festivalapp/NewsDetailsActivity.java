@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,13 +14,14 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.dank.festivalapp.lib.News;
+import com.dank.festivalapp.lib.NewsDataSource;
 
 public class NewsDetailsActivity extends Activity {
 
-	int newsID = -1;
+	Integer newsID = -1;
 	
 	String festivalID = "";
-	
+		
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -28,16 +30,22 @@ public class NewsDetailsActivity extends Activity {
 		Intent intent = getIntent();
 		newsID = Integer.parseInt( intent.getStringExtra(NewsActivity.EXTRA_MESSAGE) );
 		
+		Log.w("NewsDetailsActivity", newsID.toString() );
+		
 		festivalID = getSharedPreferences("FestivalApp", MODE_PRIVATE).
 				getString(MainActivity.FESTIVAL_ID, "none");
 		
 		drawContent();		
 		setupActionBar();
+	
+		
 	}
 
 	private void drawContent()
 	{
-		News news = NewsActivity.datasource.getNews(newsID);
+		NewsDataSource datasource = new NewsDataSource(this);
+		datasource.open();
+		News news = datasource.getNews(newsID);
 		
 		 // Create the text view
 		TextView textViewSubject = (TextView) findViewById(R.id.subject);	    
@@ -52,13 +60,13 @@ public class NewsDetailsActivity extends Activity {
 		// handle button appearance
 		Button prevButton = (Button) findViewById(R.id.prevButton);
 			
-		if (NewsActivity.datasource.getPrevNewsID(newsID, festivalID) == -1)
+		if (datasource.getPrevNewsID(newsID, festivalID) == -1)
 			prevButton.setVisibility(View.INVISIBLE);
 		else 
 			prevButton.setVisibility(View.VISIBLE);
 		
 		Button nextButton = (Button) findViewById(R.id.nextButton);		
-		if (NewsActivity.datasource.getNextNewsID(newsID, festivalID) == -1)
+		if (datasource.getNextNewsID(newsID, festivalID) == -1)
 			nextButton.setVisibility(View.INVISIBLE);
 		else 
 			nextButton.setVisibility(View.VISIBLE);
